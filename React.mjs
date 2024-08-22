@@ -71,7 +71,7 @@ export const useEffect = (callback, depArray) => {
     hooks[currentHook] = { deps: depArray, cleanup }; // hooks 배열에 변경된 deps랑 클린업 함수 저장 
     console.log('hooks =>', hooks);
   }
-  currentHook++;  // 다음번 hook으로 넘어가주세요
+  currentHook++;  // currentHook++로 index를 1증가 하여 다음 state가 들어갈 수 있게 만든다
 };
 
 export default MyReact;
